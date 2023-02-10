@@ -27,23 +27,24 @@ body {
     background-color: rgb(65, 77, 88);
     color: rgb(20, 19, 19);
     position: relative;
+    border-radius: 10px;
 }
 
 .caixa:before, .caixa:after {
     content: '';
     position: absolute;
     z-index: -1;
-    height: calc(100% + 20px);
-    width: calc(100% + 20px);
-    background: linear-gradient(#ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
-    font-weight: bold;
-    font-size: 2em;
-    text-transform: uppercase;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff,
+    #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff,
+    #a200ff);
     background-size: 300%;
-    animation: anima 8s linear infinite;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear infinite;
 }
 
-@keyframes anima {
+@keyframes AnimarBorda {
     0% {
         background-size: 0;
     }
